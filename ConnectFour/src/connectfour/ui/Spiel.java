@@ -11,8 +11,8 @@ public class Spiel extends JPanel
 	{
 		this.setLayout(new BorderLayout());
 		this.add(new JButton("oben"), BorderLayout.NORTH);
-		this.add(new JButton("Mitte"), BorderLayout.CENTER);
-		this.add(new JButton("rechts"), BorderLayout.EAST);
-		// statt JButton können hier auch andere JPandels stehen
+
+		Spielfeld spielfeld = new Spielfeld();
+		this.add(spielfeld, BorderLayout.CENTER);
 	}
 }
