@@ -9,7 +9,7 @@ public class Spielfeld extends JFrame
 		this.setSize(1000, 1000); // 1000px hoch, 1000px breit
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // das ist das, was passiert, wenn jemand das "X" des
 																// Fensters klickt
-		this.setTitle("Titel");
+		this.setTitle("Vier Gewinnt");
 
 		// hier kann noch mehr stehen
 
