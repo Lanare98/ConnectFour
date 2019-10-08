@@ -12,7 +12,7 @@ public class Fenster extends JFrame
 		this.setTitle("Vier Gewinnt");
 		Spiel spiel = new Spiel();
 		this.add(spiel);
-
+		spiel.setAktuellerSpieler("");
 		this.setVisible(true); // der letzte Befehl, der das Fenster zeigt
 	}
 }
