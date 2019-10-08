@@ -11,7 +11,12 @@ public class Feld extends JButton
 	{
 		this.setBackground(Color.WHITE);
 		this.setBorder(BorderFactory.createLineBorder(Color.RED, 2));
+		this.addActionListener(e -> clicked());
+	}
 
+	private void clicked()
+	{
+		this.setBackground(Color.YELLOW);
 	}
 
 }
