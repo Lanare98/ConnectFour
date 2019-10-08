@@ -10,8 +10,8 @@ public class Fenster extends JFrame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // das ist das, was passiert, wenn jemand das "X" des
 																// Fensters klickt
 		this.setTitle("Vier Gewinnt");
-
-		// hier kann noch mehr stehen
+		Spiel spiel = new Spiel();
+		this.add(spiel);
 
 		this.setVisible(true); // der letzte Befehl, der das Fenster zeigt
 	}
