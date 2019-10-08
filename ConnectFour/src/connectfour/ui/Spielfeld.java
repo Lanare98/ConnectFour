@@ -3,7 +3,6 @@ package connectfour.ui;
 import java.awt.Color;
 import java.awt.GridLayout;
 
-import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Spielfeld extends JPanel
@@ -16,7 +15,7 @@ public class Spielfeld extends JPanel
 		this.setBackground(Color.CYAN);
 		for (int i = 0; i < rows * cols; i++)
 		{
-			this.add(new JButton("weiterer Button"));
+			this.add(new Feld());
 		}
 	}
 }
