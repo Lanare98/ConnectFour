@@ -2,9 +2,9 @@ package connectfour.ui;
 
 import javax.swing.JFrame;
 
-public class Spielfeld extends JFrame
+public class Spiel extends JFrame
 {
-	public Spielfeld()
+	public Spiel()
 	{
 		this.setSize(1000, 1000); // 1000px hoch, 1000px breit
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // das ist das, was passiert, wenn jemand das "X" des
