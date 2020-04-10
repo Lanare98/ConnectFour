@@ -7,6 +7,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
@@ -25,6 +26,10 @@ public class Components extends JPanel
 	{
 		this.setLayout(new GridLayout(10, 1));
 
+		JButton butHello = new JButton("say Hello");
+		butHello.addActionListener(e -> sayHello());
+		this.add(butHello);
+
 		this.add(new JButton("Button"));
 		this.add(new JPanel());
 		this.add(new JRadioButton("RadioButton"));
@@ -39,4 +44,11 @@ public class Components extends JPanel
 		this.add(new JComboBox<String>(texts));
 		this.add(new JMenuItem("MenuItem"));
 	}
+
+	private void sayHello()
+	{
+		JOptionPane.showMessageDialog(this, "Hello world"); // wir verwenden this, d.h. zentral im Bezug auf DIESE
+															// JPanel, in welchem wir uns gerade befinden
+	}
+
 }
